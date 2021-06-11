@@ -1,0 +1,71 @@
+backend:
+  name: github
+  branch: master
+  repo: amiiit/fiuc-web
+  base_url: https://gleaming-ethereal-slug.glitch.me
+media_folder: public/img
+public_folder: img
+i18n:
+  structure: multiple_files
+  locales: [ en, es, fr ]
+collections:
+  - name: "event"
+    label: "Event"
+    create: true
+    i18n: true
+    folder: "content/events"
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Type", name: "type", widget: "string", i18n: true }
+      - { label: "Event Page Content", name: 'body', widget: 'markdown', required: false, i18n: duplicate }
+      - label: "Start Date"
+        name: "startDate"
+        widget: "datetime"
+        time_format: false
+        picker_utc: true
+        i18n: duplicate
+      - label: "End Date"
+        name: "endDate"
+        widget: "datetime"
+        time_format: false
+        picker_utc: true
+        comment: "This is the end date of the event. Set to the same date of the starting date if this is a one day event"
+        i18n: duplicate
+      - label: "External Link"
+        name: "eventLink"
+        widget: "text"
+        required: false
+        i18n: duplicate
+  - name: "theme"
+    label: "Theme"
+    create: false
+    i18n: true
+    folder: "content/theme"
+    fields:
+      - { label: "Name", name: "name", widget: "string", i18n: duplicate }
+      - { label: "Hero Content", name: "hero_content", widget: "markdown", i18n: true }
+  - name: "team_members"
+    label: "Team member"
+    create: true
+    i18n: true
+    folder: "content/team_members"
+    fields:
+      - { label: "Name", name: "name", widget: "string", i18n: duplicate }
+      - { label: "Summary", name: "summary", widget: "string", i18n: true }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", i18n: duplicate }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - label: 'Cats'
+            name: "cats"
+            widget: list
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
