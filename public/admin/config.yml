@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master
-  repo: amiiit/fiuc-web
+  repo: siembrabosques/web
   base_url: https://gleaming-ethereal-slug.glitch.me
 media_folder: public/img
 public_folder: img
