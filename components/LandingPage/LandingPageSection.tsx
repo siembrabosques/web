@@ -20,7 +20,7 @@ const LandingPageSection = (props: Props) => {
 const Root = styled.div`
   padding-top: 80px;
   height: 100vh;
-  min-height: 800px;
+  min-height: 660px;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,6 +28,8 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  box-sizing: border-box;
   
 `
 
