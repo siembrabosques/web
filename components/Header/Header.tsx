@@ -7,13 +7,14 @@ interface Props {
 
 const Header = (props: Props) => (
     <Root className={props.className}>
-        <Logo/>
+        <Logo />
     </Root>
 )
 
 const Root = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 34px 8px 8px 34px;
 `
 
 

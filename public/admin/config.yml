@@ -15,6 +15,7 @@ collections:
     i18n: true
     folder: "content/landing_sections"
     fields:
+      - { label: "Title", name: "title", widget: "string", i18n: duplicate }
       - { label: "Background", name: "background", widget: "image", i18n: duplicate }
       - { label: "Content", name: "content", widget: "markdown", i18n: true }
   - name: "event"

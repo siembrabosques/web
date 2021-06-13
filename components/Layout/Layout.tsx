@@ -32,6 +32,7 @@ const Layout = (props: Props) => {
 const Root = styled.div`
   position: absolute;
   z-index: 1;
+  display: flex;
 `
 
 const StyledHeader = styled(Header)`
