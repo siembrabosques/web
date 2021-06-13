@@ -2,7 +2,6 @@ import * as React from 'react'
 import Head from "next/head";
 import Header from "../Header";
 import {Global, css} from '@emotion/react'
-
 interface Props {
     children: any
 }
@@ -12,6 +11,7 @@ const Layout = (props: Props) => {
         <div>
             <Global
                 styles={css`
+                  @font-
                   body {
                     margin: 0;
                     padding: 0;
@@ -27,5 +27,7 @@ const Layout = (props: Props) => {
         </div>
     )
 }
+
+
 
 export default Layout

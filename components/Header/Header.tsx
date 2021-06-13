@@ -1,9 +1,9 @@
 import styled from '@emotion/styled'
-import Link from "next/link";
+import Logo from "../Layout/Logo";
 
 const Header = () => (
     <Root>
-        <Logo src='/img/fiuc-logo.png'/>
+        <Logo />
     </Root>
 )
 
@@ -13,12 +13,7 @@ const Root = styled.div`
   width: 100vw;
 `
 
-const Logo = styled.img`
-  max-width: 200px;
-  max-height: 80px;
-  width: auto;
-  height: auto;
-`
+
 
 const Nav = styled.nav`
   display: flex;

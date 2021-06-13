@@ -10,5 +10,4 @@ export async function getStaticProps(context): Promise<{ props: MainProps }> {
     return {
         props: {events, theme}
     }
-
 }
