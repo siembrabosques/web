@@ -38,7 +38,6 @@ const Content = styled.div`
   width: 600px;
   color: white;
   font-family: GalyonBook,sans-serif;
-  line-height: 2em;
 `
 
 export default LandingPageSection
