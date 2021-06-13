@@ -24,6 +24,7 @@ const Root = styled.div`
   width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-x: center;
   
   display: flex;
   flex-direction: column;
