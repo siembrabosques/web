@@ -7,7 +7,7 @@ media_folder: public/img
 public_folder: img
 i18n:
   structure: multiple_files
-  locales: [ en, es, fr ]
+  locales: [ es, en, fr ]
 collections:
   - name: "landing_section"
     label: "Lending Page Section"

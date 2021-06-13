@@ -8,13 +8,17 @@ interface Props {
 }
 
 const LandingPage = (props: Props) => {
-    return <>
+    return <Root>
         {
             props.sections.map(section => (
                 <LandingPageSection key={section.originFile} section={section} />
             ))
         }
-    </>
+    </Root>
 }
 
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 export default LandingPage

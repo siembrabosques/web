@@ -31,6 +31,5 @@ const getLandingPageFromFilename = async (pagePath: string): Promise<LandingPage
         content: await htmlFromMarkdown(gMatter.data.content),
         originFile: pagePath
     }
-    console.log('result', result)
     return result
 }
