@@ -1,4 +1,5 @@
 ---
+title: First
 background: img/landing_page_background_1.png
 content: >-
   The nature does not plant trees,
