@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import {Theme} from "../../lib/datasource";
+import {Theme} from "../../lib/datasource/datasource";
 
 interface Props {
     className?: string

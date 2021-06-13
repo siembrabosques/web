@@ -1,4 +1,4 @@
-import {Event} from "../../lib/datasource";
+import {Event} from "../../lib/datasource/datasource";
 import styled from '@emotion/styled';
 import {format, parseISO} from 'date-fns'
 import Link from 'next/link'

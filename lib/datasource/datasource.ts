@@ -1,9 +1,7 @@
 import fs from 'fs'
 import {join} from 'path'
 import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
-import {htmlFromMarkdown} from "./markdown";
+import {htmlFromMarkdown} from "../markdown";
 
 const eventsPath = join(process.cwd(), 'content/events')
 const themePath = join(process.cwd(), 'content/theme')
@@ -24,7 +22,7 @@ const recoverFileNameFromSlug = (slug: string, language: string): string => {
     return slug.match(/.*_(.*)/)[1] + `.${language}.md`
 }
 
-const getLanguageFilterRegexp = language => new RegExp(`.*\.${language}\.md$`)
+export const getLanguageFilterRegexp = language => new RegExp(`.*\.${language}\.md$`)
 
 export const getAllEventSlugs = async (language: string, path: string = eventsPath): Promise<Event[]> => {
     const regex = getLanguageFilterRegexp(language)

@@ -3,24 +3,29 @@ import styled from "@emotion/styled";
 import {css} from "@emotion/css";
 import Image from 'next/image'
 
-const Logo = () => (
-    <div style={{background: 'black'}}>
-        <Image src="/assets/logo_letters.svg" width={400} height={200}/>
-        <div className={css`
-          text-transform: uppercase;
-        `}
-        >
-            Siembrabosques
-        </div>
-        <div>
+interface Props {
+    className?: string
+}
+
+const Logo = (props: Props) => (
+    <Root className={props.className}>
+        <ImageContainer/>
+        <div style={{color: "white"}}>
             es un proyecto de <a href={"https://semillistas.es"}>semillistas.es</a>
         </div>
 
-    </div>
+    </Root>
 )
 const Root = styled.div`
-
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 `
-const Title = styled.div``
 
+const ImageContainer = styled.div`
+  height: 40px;
+  background-image: url("/assets/logo_letters.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+`
 export default Logo

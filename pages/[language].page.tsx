@@ -1,4 +1,4 @@
-import {getAllEventSlugs, getTheme, Event, Theme} from "../lib/datasource";
+import {getAllEventSlugs, getTheme, Event, Theme} from "../lib/datasource/datasource";
 import Main, {Props as MainProps} from './_main'
 
 export default Main

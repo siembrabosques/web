@@ -1,4 +1,4 @@
-import {getAllEventSlugs, getEventFromSlug, Event} from "../../lib/datasource";
+import {getAllEventSlugs, getEventFromSlug, Event} from "../../lib/datasource/datasource";
 import Layout from "../../components/Layout";
 
 interface Props {

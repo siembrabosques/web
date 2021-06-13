@@ -1,18 +1,20 @@
 import styled from '@emotion/styled'
 import Logo from "../Layout/Logo";
 
-const Header = () => (
-    <Root>
-        <Logo />
+interface Props {
+    className?: string
+}
+
+const Header = (props: Props) => (
+    <Root className={props.className}>
+        <Logo/>
     </Root>
 )
 
 const Root = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100vw;
 `
-
 
 
 const Nav = styled.nav`
