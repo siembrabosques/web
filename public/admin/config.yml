@@ -10,7 +10,7 @@ i18n:
   locales: [ es, en, fr ]
 collections:
   - name: "landing_section"
-    label: "Lending Page Section"
+    label: "Landing Page Section"
     create: true
     i18n: true
     folder: "content/landing_sections"
