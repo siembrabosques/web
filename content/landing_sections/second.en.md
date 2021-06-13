@@ -8,13 +8,7 @@ content: >-
   # BENEFICIO LOCAL
 
 
-  Regeneración integral de la comunidad local\
-
-  cuidando la salud física y mental de voluntarios\
-
-  y locales a través de terapias y talleres.\
-
-  Desarrollo de una comunidad rural más unida, saludable, resiliente y comprometida con su territorio.
+  Regeneración integral de la comunidad local cuidando la salud física y mental de voluntarios y locales a través de terapias y talleres. Desarrollo de una comunidad rural más unida, saludable, resiliente y comprometida con su territorio.
 
 
   La tierra y los seres humanos somos interdependientes:
