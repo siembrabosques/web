@@ -1,5 +1,5 @@
 ---
-background: img/fondo1.png
+background: img/landing_page_background_1.png.png
 content: >-
   The nature does not plant trees,
 

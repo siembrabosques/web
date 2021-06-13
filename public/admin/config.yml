@@ -9,6 +9,14 @@ i18n:
   structure: multiple_files
   locales: [ en, es, fr ]
 collections:
+  - name: "landing_section"
+    label: "Lending Page Section"
+    create: true
+    i18n: true
+    folder: "content/landing_sections"
+    fields:
+      - { label: "Background", name: "background", widget: "image", i18n: duplicate }
+      - { label: "Content", name: "content", widget: "markdown", i18n: true }
   - name: "event"
     label: "Event"
     create: true

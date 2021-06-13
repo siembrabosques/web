@@ -10,23 +10,14 @@ import styled from "@emotion/styled";
 export interface Props {
     theme: Theme
     events: Event[]
+    landingSections: LandingSection[]
 }
 export default function Main(props: Props) {
     return (
         <Layout>
             <Hero theme={props.theme}/>
-            <BottomPart>
-                <News/>
-                <EventsList events={props.events} className={css`width: 400px;`}/>
-            </BottomPart>
+
         </Layout>
     )
 }
 
-const BottomPart = styled.div`
-  display: flex;
-  flex-direction: row;
-  > * {
-    flex: 1;
-  }
-`
