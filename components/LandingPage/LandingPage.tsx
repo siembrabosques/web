@@ -9,11 +9,11 @@ interface Props {
 
 const LandingPage = (props: Props) => {
     return <Root>
-        {
-            props.sections.map(section => (
-                <LandingPageSection key={section.originFile} section={section} />
-            ))
-        }
+            {
+                props.sections.map(section => (
+                    <LandingPageSection key={section.originFile} section={section}/>
+                ))
+            }
     </Root>
 }
 

@@ -6955,6 +6955,11 @@ react-modal@^3.8.1:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
+react-parallax@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/react-parallax/-/react-parallax-3.3.0.tgz#79f7a33451e7a419d0052f795c5d3655aa1e20b4"
+  integrity sha512-gI7YdblxdbhZ1ISqaWzIqlPSuQLX76QFbzWKmeA0hCprjephVdVD35gCN+Fu8v0p3cfw+DFTN/PE+jYgcCOLUw==
+
 react-polyglot@^0.7.0:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/react-polyglot/-/react-polyglot-0.7.1.tgz#c11702243e154d41d2d3fcbc745f05b040ab0a50"

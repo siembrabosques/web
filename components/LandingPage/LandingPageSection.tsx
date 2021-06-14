@@ -1,5 +1,6 @@
 import {LandingPageSection as ILandingPageSection} from "../../lib/datasource/landing_page";
 import styled from "@emotion/styled";
+import {Parallax, Background} from "react-parallax";
 
 interface Props {
     section: ILandingPageSection
@@ -7,13 +8,11 @@ interface Props {
 
 const LandingPageSection = (props: Props) => {
     return (
-        <Root
-             style={{
-                 backgroundImage: `url(${props.section.background})`,
-             }}
-        >
-            <Content dangerouslySetInnerHTML={{__html: props.section.content}} />
-        </Root>
+        <Parallax bgImage={props.section.background}>
+            <Root>
+                <Content dangerouslySetInnerHTML={{__html: props.section.content}}/>
+            </Root>
+        </Parallax>
     )
 }
 
@@ -25,19 +24,19 @@ const Root = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   box-sizing: border-box;
-  
+
 `
 
 const Content = styled.div`
   width: 600px;
   color: white;
-  font-family: GalyonBook,sans-serif;
+  font-family: GalyonBook, sans-serif;
 `
 
 export default LandingPageSection
