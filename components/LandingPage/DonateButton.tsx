@@ -1,19 +1,18 @@
 import * as React from 'react'
 import Image from 'next/image'
 import styled from "@emotion/styled";
-import {MouseEventHandler} from "react";
 
 interface Props {
     className?: string
 }
 
 const DonateButton = (props: Props) => {
-    const [trees, setTrees] = React.useState<number>(1)
+    const [trees, setTrees] = React.useState<number>(1)g
     const donationAmount = trees * 2;
 
-    const amendDonation = (d: number) => (e: MouseEventHandler<HTMLButtonElement>) => {
+    const amendDonation = (d: number) => (event: any) => {
         setTrees(Math.max(1, trees + d))
-        e.preventDefault()
+        event.preventDefault()
     }
     return <Root className={props.className}
                  href={`https://www.paypal.com/donate?business=contacto%40semillistas.es&item_name=Reforestaci%C3%B3n+de+Sierra+de+Lujar&currency_code=EUR&amount=${donationAmount}`}>
