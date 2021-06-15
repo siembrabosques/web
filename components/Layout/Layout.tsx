@@ -16,7 +16,7 @@ const Layout = (props: Props) => {
                   body {
                     margin: 0;
                     padding: 0;
-                    background: #8f595e;
+                    background: #4f6648;
                   }
                 `}
             />
