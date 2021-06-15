@@ -7,7 +7,7 @@ interface Props {
 }
 
 const DonateButton = (props: Props) => {
-    const [trees, setTrees] = React.useState<number>(1)g
+    const [trees, setTrees] = React.useState<number>(1)
     const donationAmount = trees * 2;
 
     const amendDonation = (d: number) => (event: any) => {
