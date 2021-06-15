@@ -19,7 +19,7 @@ const DonateButton = (props: Props) => {
             <Content>
                 <Text>
                     <div>¡Siembrate!</div>
-                    <div>{trees} Arbol €{trees * 2}</div>
+                    <div>{trees} {trees > 1 ? 'Arboles' : 'Arbol'} €{trees * 2}</div>
                 </Text>
                 <Buttons>
                     <button onClick={amendDonation(-1)} disabled={trees === 1}>-</button>
@@ -87,15 +87,14 @@ const Buttons = styled.div`
   margin: 4px 8px 4px 8px;
 
   button {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.2);
     background: transparent;
     border: none;
     font-size: 24px;
-    border-radius: 50%;
-    border: 2px solid #538858;
-    box-shadow: black;
-
+    border-radius: 550%;
+    cursor: pointer;
     &:first-child {
       margin-right: 8px;
     }
@@ -113,6 +112,11 @@ const ActionButton = styled.button`
   font-size: 24px;
   font-family: Galyon;
   cursor: pointer;
+  transition: font-size ease-in-out 0.2s, color ease-in-out 0.2s;
+  &:hover {
+    font-size: 26px;
+    color: rgba(0,0,0,.8);
+  }
 `
 
 const Spacer = styled.div`
