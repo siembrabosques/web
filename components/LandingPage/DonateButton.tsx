@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from "@emotion/styled";
+
 interface Props {
     className?: string
 }
@@ -12,21 +13,22 @@ const DonateButton = (props: Props) => {
         setTrees(Math.max(1, trees + d))
         event.preventDefault()
     }
-    return <Root className={props.className}
-                 href={`https://www.paypal.com/donate?business=contacto%40semillistas.es&item_name=Reforestaci%C3%B3n+de+Sierra+de+Lujar&currency_code=EUR&amount=${donationAmount}`}>
-        <Content>
-            <Text>
-                <div>¡Siembrate!</div>
-                <div>{trees} Arbol €{trees * 2}</div>
-            </Text>
-            <Buttons>
-                <button onClick={amendDonation(-1)} disabled={trees === 1}>-</button>
-                <button onClick={amendDonation(1)}>+</button>
-            </Buttons>
-            <ActionButton>¡Donar Ahora!</ActionButton>
-            <Spacer />
-        </Content>
-    </Root>
+    return (
+        <Root className={props.className}
+              href={`https://www.paypal.com/donate?business=contacto%40semillistas.es&item_name=Reforestaci%C3%B3n+de+Sierra+de+Lujar&currency_code=EUR&amount=${donationAmount}`}>
+            <Content>
+                <Text>
+                    <div>¡Siembrate!</div>
+                    <div>{trees} Arbol €{trees * 2}</div>
+                </Text>
+                <Buttons>
+                    <button onClick={amendDonation(-1)} disabled={trees === 1}>-</button>
+                    <button onClick={amendDonation(1)}>+</button>
+                </Buttons>
+                <ActionButton>¡Donar Ahora!</ActionButton>
+            </Content>
+        </Root>
+    )
 }
 
 const Text = styled.div`
@@ -37,11 +39,12 @@ const Text = styled.div`
 `
 
 const Content = styled.div`
+  padding-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
   z-index: 3;
   text-transform: uppercase;
 
@@ -52,11 +55,11 @@ const Content = styled.div`
 const Root = styled.a`
   font-size: 24px;
   font-family: Galyon;
-  
+
   background-image: url('/img/tree.png');
   background-size: contain;
   background-repeat: no-repeat;
-  
+
   text-decoration: none;
   color: black;
 
@@ -69,24 +72,13 @@ const Root = styled.a`
   position: absolute;
   margin: 16px;
   transition: transform ease-in-out 0.2s;
-
-  img {
-    transition: filter ease-in-out 0.4s;
-    filter: hue-rotate(20deg);
-  }
+  transition: filter ease-in-out 0.4s;
+  filter: hue-rotate(20deg);
 
   &:hover {
     transform: rotate(3deg);
-
-    img {
-      filter: hue-rotate(50deg);
-
-    }
+    filter: hue-rotate(50deg);
   }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 `
 
 const Buttons = styled.div`
