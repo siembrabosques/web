@@ -30,6 +30,7 @@ const Root = styled.div`
   align-items: center;
 
   box-sizing: border-box;
+  justify-content: center;
 
 `
 
