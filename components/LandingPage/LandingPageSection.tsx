@@ -35,7 +35,9 @@ const Root = styled.div`
 `
 
 const Content = styled.div`
-  width: 600px;
+  max-width: 550px;
+  width: 95vw;
+  padding: 32px;
   color: white;
   font-family: GalyonBook, sans-serif;
 `
