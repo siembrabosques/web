@@ -1,7 +1,5 @@
 import * as React from 'react'
-import Image from 'next/image'
 import styled from "@emotion/styled";
-
 interface Props {
     className?: string
 }
@@ -28,7 +26,6 @@ const DonateButton = (props: Props) => {
             <ActionButton>¡Donar Ahora!</ActionButton>
             <Spacer />
         </Content>
-        <Image src="/img/tree.png" className={props.className} layout="fill"/>
     </Root>
 }
 
@@ -55,6 +52,10 @@ const Content = styled.div`
 const Root = styled.a`
   font-size: 24px;
   font-family: Galyon;
+  
+  background-image: url('/img/tree.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   
   text-decoration: none;
   color: black;
@@ -119,6 +120,7 @@ const ActionButton = styled.button`
   border: none;
   font-size: 24px;
   font-family: Galyon;
+  cursor: pointer;
 `
 
 const Spacer = styled.div`
