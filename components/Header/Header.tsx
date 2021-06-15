@@ -15,6 +15,9 @@ const Root = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 34px 8px 8px 34px;
+  @media (max-width: 500px) {
+    padding: 8px;
+  }
 `
 
 
