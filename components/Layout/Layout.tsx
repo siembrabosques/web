@@ -22,7 +22,7 @@ const Layout = (props: Props) => {
             />
             <Head>
                 <title>Siembrabosques</title>
-                <link rel="icon" type="image/png" href="/favicon.svg"/>
+                <link rel="icon" type="image/png" href="/favicon.png"/>
             </Head>
             <StyledHeader/>
             {props.children}
