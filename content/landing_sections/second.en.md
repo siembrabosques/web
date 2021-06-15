@@ -1,6 +1,6 @@
 ---
 title: Second
-background: img/fondo2.png
+background: img/web-background-2.jpg
 content: >-
   # ECOLOGIA GLOBAL
 

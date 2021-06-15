@@ -1,6 +1,6 @@
 ---
 title: Third
-background: img/fondo3.png
+background: img/web-background-3.jpg
 content: |-
   # PROYECTO DE REGENERACION INTEGRAL
 
