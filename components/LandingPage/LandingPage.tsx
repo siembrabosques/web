@@ -27,6 +27,11 @@ const Root = styled.div`
 const StyledDonateButton = styled(DonateButton)`
   width: 240px;
   height: 240px;
+  @media (max-width: 500px) {
+    width: 120px;
+    height: 120px;
+    font-size: 9px;
+  }
   position: fixed;
   bottom: 0;
   right: 0;
