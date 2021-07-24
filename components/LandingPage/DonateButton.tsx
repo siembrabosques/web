@@ -19,7 +19,7 @@ const DonateButton = (props: Props) => {
             <Content>
                 <Text>
                     <div>¡Siembrate!</div>
-                    <div>{trees} {trees > 1 ? 'Arboles' : 'Arbol'} €{trees * 2}</div>
+                    <div>Un arbol 2,5€</div>
                 </Text>
                 <ActionButton>¡Donar Ahora!</ActionButton>
             </Content>
@@ -81,6 +81,7 @@ const ActionButton = styled.button`
   border: none;
   font-size: 1.5em;
   font-family: Galyon;
+  margin: ${[1,2,3,4]};
   cursor: pointer;
   transition: font-size ease-in-out 0.2s, color ease-in-out 0.2s;
   &:hover {

@@ -4,7 +4,7 @@ background: img/web-background-3.jpg
 content: |-
   # PROYECTO DE REGENERACION INTEGRAL
 
-  ###### 25.000 árboles y arbustos establecidos 
+  ###### 25.000 árboles y arbustos establecidos
 
   ###### 50 hectáreas reforestadas
 
