@@ -3,9 +3,11 @@ import Head from "next/head";
 import Header from "../Header";
 import {Global, css} from '@emotion/react'
 import styled from "@emotion/styled";
+import {Navigation} from "../../data/navigation";
 
 interface Props {
     children: any
+    navigation: Navigation
 }
 
 const Layout = (props: Props) => {
@@ -24,7 +26,7 @@ const Layout = (props: Props) => {
                 <title>Siembrabosques</title>
                 <link rel="icon" type="image/png" href="/favicon.png"/>
             </Head>
-            <StyledHeader/>
+            <StyledHeader navigation={props.navigation}/>
             {props.children}
         </Root>
     )

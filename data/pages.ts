@@ -80,7 +80,9 @@ export const getChildPages = async (): Promise<ChildPageItem[]> => {
 	        ${PageFragment}
             query GetPagesWithChildren {
                 pages(first: 1000) {
-	                ...Page
+	                nodes {
+		                ...Page
+                    }
                 }
             }`
     })

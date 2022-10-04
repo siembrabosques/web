@@ -14,12 +14,18 @@ export interface Props {
 
 export default function Main(props: Props) {
     return (
-        <Layout>
-            <Nav navigation={props.navigation}/>
+        <Layout navigation={props.navigation}>
             {/*<LandingPage sections={props.landingSections} />*/}
             <div dangerouslySetInnerHTML={{__html: props.mainPage.content}} style={{
                 backgroundImage: `url(${props.mainPage.featuredImage.node.mediaItemUrl})`
             }}></div>
+
+            <h2>posts:</h2>
+            <ul>
+                {
+                    props.posts.map(post => <li key={post.slug}><a href={`/post/${post.slug}`}>{post.slug}</a></li>)
+                }
+            </ul>
 
         </Layout>
     )

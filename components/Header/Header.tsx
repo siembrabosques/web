@@ -1,14 +1,18 @@
 import styled from '@emotion/styled'
 import Logo from "../Layout/Logo";
-
+import * as React from "react";
+import {Navigation} from "../../data/navigation";
+import Nav from '../Layout/Navigation/Nav'
 interface Props {
-    className?: string
+	className?: string
+	navigation: Navigation
 }
 
 const Header = (props: Props) => (
-    <Root className={props.className}>
-        <Logo />
-    </Root>
+	<Root className={props.className}>
+		<Logo/>
+		<Nav navigation={props.navigation}/>
+	</Root>
 )
 
 const Root = styled.div`
@@ -20,12 +24,6 @@ const Root = styled.div`
   }
 `
 
-
-const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  padding: 8px;
-`
 const HeaderLink = styled.a`
   width: 240px;
   color: white;
