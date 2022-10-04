@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {useRouter} from 'next/router'
 import {css} from "@emotion/css";
 
+
 interface Props {
     className?: string
     events: Event[]
